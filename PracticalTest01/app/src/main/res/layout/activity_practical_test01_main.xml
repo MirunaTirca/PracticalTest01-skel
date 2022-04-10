@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PracticalTest01MainActivity">
+
+
+<!--   C2 - intentii -->
+    <Button
+        android:id="@+id/navigate_to_secondary_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Navigate to secondary activity" />
+
+<!--    A2 - exemplu interfata main -->
+    <EditText
+        android:id="@+id/left_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigate_to_secondary_activity"
+        android:layout_alignParentLeft="true"
+        android:ems="9"
+        android:gravity="center"
+        android:saveEnabled="false" />
+
+    <EditText
+        android:id="@+id/right_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigate_to_secondary_activity"
+        android:layout_alignParentRight="true"
+        android:ems="9"
+        android:gravity="center"
+        android:saveEnabled="false" />
+
+    <Button
+        android:id="@+id/left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/left_edit_text"
+        android:layout_alignParentBottom="false"
+        android:ems="9"
+        android:text="Press Me!" />
+
+    <Button
+        android:id="@+id/right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/right_edit_text"
+        android:layout_alignParentRight="true"
+        android:ems="9"
+        android:text="Press Me, Too!" />
+
+</RelativeLayout>

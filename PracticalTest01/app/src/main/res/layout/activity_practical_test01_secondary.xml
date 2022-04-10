@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PracticalTest01SecondaryActivity">
+
+<!--    ex C1 -->
+    <TextView
+        android:id="@+id/total_text_view"
+        android:layout_width="218dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:ems="11"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_text_view"
+        android:ems="8"
+        android:text="@string/ok" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_text_view"
+        android:layout_alignParentRight="true"
+        android:ems="8"
+        android:text="@string/cancel" />
+
+</RelativeLayout>
